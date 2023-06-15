@@ -7,7 +7,7 @@ const Welcome = () => {
   return (
     <>
       <Header />
-      <ContentWelcome />
+      <ContentWelcome/>
       <Footer/>
     </>
   )
