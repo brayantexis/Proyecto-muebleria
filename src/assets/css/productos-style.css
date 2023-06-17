@@ -5,19 +5,18 @@
 
 /* Contenedor padre */
 .contenido{
-    width: 90%;
+    width: 100%;
     /* background: black; */
-    margin: auto;
-    margin-top: 10px;
-    overflow: hidden;
+    margin: 0 auto;
+    height: 80vh;
     padding: 10px;
     display: flex;
     justify-content: center;
+    align-items: center;
 }
 
 /* Los dos contenedores en pantalla */
 .contenido_registro{
-    width: 50%;
     background: white;
     float: left;
     margin-left: 10px;
@@ -29,21 +28,23 @@
     margin-right: 10px;
     margin-top: 10px;
     height: 600px;
-    width: 800px;
+    width: 45%;
 }
 
 /* Contenedor de visualizar  */
 
 .Cver{
     margin-left: 15px;
-    height: 630px;
-    width: 800px;
+    height: 420px;
+    width: 60%;
+    display: flex;
+    flex-direction: column;
 }
 
 /* Contendor de los titulos de contendores */
 
 .contenido_titulo{
-    background: #F1C40F;
+    background: #AF781E;
     color: white;
     border-top-left-radius: 10px;
     border-top-right-radius: 10px;
@@ -129,19 +130,17 @@
  @media(min-width: 1280px){
 
     .contenido{
-        height: 850px;
-        width: 1210px;
-        padding-top: 45px;
-        /* background: yellow; */
-        position: absolute;
-        top: 55%;
-        left: 50%;
-        transform: translate(-50%, -50%)
+        width: 100%;
+        padding-top: 15px;
     }
     
     .Pform .Pgrupo{
         position: relative;
-        margin: 18px;
+        margin:15px 5px 20px 5px;
+    }
+
+    #TituloP{
+        font-size: 23px;
     }
 
     .contenido_conte h4{
@@ -152,13 +151,31 @@
         margin-right: 10px;
         margin-top: 10px;
         height: 700px;
-        width: 900px;
     }
 
     .Cver{
+        width: 50%;
         margin-left: 15px;
-        height: 740px;
-        width: 900px;
+        height: 580px;
+    }
+}
+
+
+@media (max-width: 720px) {
+    .Pform{
+        width: 80%;
+    }
+    .contenido{
+        flex-direction: column;
+    }
+    .contenido_registro{
+        width: 60%;
+    }
+    .Cver{
+        display: none;
+    }
+    .Cnuevo{
+        /* display: none; */
     }
 }
 

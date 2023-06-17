@@ -7,7 +7,7 @@ const Productos = () => {
          <div className="contenido">
             <div className="contenido_registro Cnuevo">
                 <div className="contenido_titulo">
-                    <h3>Productos</h3>
+                    <h3 id="TituloP">Productos</h3>
                 </div>
                 <div className="contenido_conte">
                     <h4>Nuevo Registro:</h4>
@@ -50,7 +50,7 @@ const Productos = () => {
             </div>
             <div className="contenido_registro Cver">
             <div className="contenido_titulo">
-                    <h3>Categorias Registradas</h3>
+                    <h3 id="TituloP">Categorias Registradas</h3>
                 </div>
                 <div className="contenido_conte">
                   

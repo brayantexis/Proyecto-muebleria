@@ -8,20 +8,19 @@ body{
 
 /* Contenedor padre */
 
-.content{
-    width: 90%;
+#CateC{
+    width: 100%;
     /* background: black; */
-    margin: auto;
-    margin-top: 15px;
+    margin: 0 auto;
+    height: 80vh;
     padding: 10px;
-    overflow: hidden;
     display: flex;
     justify-content: center;
+    align-items: center;
 }
 
 /* Los dos contenedores en pantalla */
-.content_registro{
-    width: 50%;
+#CateR{
     background: white;
     float: left;
     margin-left: 10px;
@@ -29,22 +28,25 @@ body{
 }
 
 /* Contenedor del registro */
-.nuevo{
+.nuevoo{
     margin-right: 10px;
     margin-top: 10px;
-    height: 400px;
+    height: 510px;
+    width: 40%;
 }
 
 /* Contenedor de visualizar  */
 
-.ver{
+.veer{
     margin-left: 15px;
     height: 420px;
+    width: 60%;
+    display: flex;
+    flex-direction: column;
 }
-
 /* Contendor de los titulos de contendores */
 
-.content_titulo{
+#CateT{
     background: #F1C40F;
     color: white;
     border-top-left-radius: 10px;
@@ -55,9 +57,12 @@ body{
 }
 
 
-.content_conte{
+#CateCC{
     height: 300px;
     padding-left: 2%;
+}
+.over{
+    overflow: auto;
 }
 
 .content_conte h4{
@@ -72,9 +77,10 @@ body{
     margin: auto;
 }
 
-.form .grupo{
+.form .grupo_f{
     position: relative;
-    margin: 30px;
+    /* midificacion jahir */
+    margin:30px 5px 20px 5px;
 }
 
 input{
@@ -107,7 +113,7 @@ label{
 input[type="date"]{
     color: var(--colorTextos);
     font-size: 13px;
-   
+
 }
 
 input:focus~label,
@@ -152,45 +158,109 @@ button{
     border-radius: 10px;
 }
 
-@media screen and(max-width: 500px) {
+@media (max-width: 720px) {
     .form{
         width: 80%;
+    }
+    .content{
+        flex-direction: column;
+    }
+    .content_registro{
+        width: 60%;
+    }
+    .veer{
+        display: none;
+    }
+    .nuevo{
+        /* display: none; */
     }
 }
 
 /* Esilo de la tabla */
 
+th{
+ background: #F1C40F;
+}
+
+td{
+    background: #D7DBDD;
+}
+
+table{
+    margin-top: 30px;
+    border-collapse: collapse;
+    width: 200px;
+    text-align: center;
+}
+
+th, td{
+    padding: 5px 14px;
+}
+
+.cru{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+
+input[type="submit"]{
+    width:50%;
+    float: left;
+}
+
+.btn_editar{
+    background: #2980B9;
+}
+
+.btn_eliminar{
+    background: #E74C3C;
+}
+
 @media(min-width: 1280px){
 
-    .content{
-        height: 700px;
-        width: 1210px;
-        padding-top: 45px;
+    #CateC{
+        /* Quitar final */
+        /* height: 700px; */
+        width: 100%;
+        padding-top: 15px;
         /* background: yellow; */
-        position: absolute;
+        /* Quitar final */
+        /* position: absolute;
         top: 50%;
         left: 50%;
-        transform: translate(-50%, -50%)
+        transform: translate(-50%, -50%) */
     }
-    
-    .form .grupo{
+
+    .form .grupo_f{
         position: relative;
-        margin: 50px;
+        margin:15px 5px 20px 5px;
+    }
+
+    #Titulo{
+        font-size: 23px;
     }
 
     .content_conte h4{
         font-size: 20px;
     }
 
-    .nuevo{
+    .nuevoo{
         margin-right: 10px;
         margin-top: 10px;
         height: 550px;
     }
 
-    .ver{
+    .veer{
+        width: 50%;
         margin-left: 15px;
         height: 580px;
+    }
+
+    table{
+        margin: 30px 0 0 18px;
+        border-collapse: collapse;
+        width: 520px;
+        text-align: center;
     }
 }
 

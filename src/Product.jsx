@@ -8,6 +8,7 @@ const Product = () =>{
         <>
          <Header />
          <Productos />
+         <Footer />
         </>
     )
 }
