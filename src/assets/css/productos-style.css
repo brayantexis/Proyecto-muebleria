@@ -6,12 +6,13 @@
 /* Contenedor padre */
 .contenido{
     width: 100%;
+    /* background: black; */
     margin: 0 auto;
-    height: auto;
+    height: 100vh;
     padding: 10px;
     display: flex;
     justify-content: center;
-    align-items: start;
+    align-items: center;
 }
 
 /* Los dos contenedores en pantalla */
