@@ -28,15 +28,15 @@ h1{
     flex-direction: column;
     gap: 30px;
 }
-label{
+.Llogin{
     background-color: rgba(198, 194, 194, 0.742);
     border-radius: 100px;
     padding: 4px;
 }
-label, input{
+.Llogin, #userName, #password{
     font-size: 25px;
 }
-input[type="submit"]{
+#entrar{
     border-radius: 100px;
     margin-bottom: 15px;
     padding: 6px;
@@ -46,7 +46,7 @@ input[type="submit"]{
     padding: 10px 0px;
     background-color: #d9d9d9;
 }
-input[type="text"],input[type="password"]{
+#userName,#password{
     outline: none;
     border: 0;
     width: 500px;
@@ -62,4 +62,20 @@ input[type="text"],input[type="password"]{
 }
 ::placeholder{
     color: white ;
+}
+@media (max-width: 900px){
+
+    .Llogin, #userName, #password{
+        font-size: 17px;
+    }
+    h1{
+        font-size: 30px;
+    }
+    .login{
+        width: 20px;
+    }
+    #userName,#password{
+        width: 150px;
+        bottom: 2px;
+    }
 }

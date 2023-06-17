@@ -12,27 +12,27 @@ const ContentUsuarios = () => {
                     <form action="" id="form">
                         <div className="form">
                             <div className="grupo" id='clave'>
-                                <input type="text" id="codigo" required/><span className="barra"></span>
-                                <label>Clave de empleado</label>
+                                <input className="IDash" type="text" id="codigo" required/><span className="barra"></span>
+                                <label className="LDash">Clave de empleado</label>
                             </div>
                             <div className="grupo">
-                                <input type="text" id="categoria" required/><span className="barra"></span>
-                                <label>Nombre</label>
+                                <input className="IDash" type="text" id="categoria" required/><span className="barra"></span>
+                                <label className="LDash">Nombre</label>
                             </div>
                             <div className="grupo">
-                                <input type="text" id="categoria" required/><span className="barra"></span>
-                                <label>Puesto</label>
+                                <input className="IDash" type="text" id="categoria" required/><span className="barra"></span>
+                                <label className="LDash">Puesto</label>
                             </div>
                             <div className="grupo">
-                                <input type="text" id="categoria" required/><span className="barra"></span>
-                                <label>Usuario</label>
+                                <input className="IDash" type="text" id="categoria" required/><span className="barra"></span>
+                                <label className="LDash">Usuario</label>
                             </div>
                             <div className="grupo">
-                                <input type="text" id="categoria" required/><span className="barra"></span>
-                                <label>Contraseña</label>
+                                <input className="IDash" type="text" id="categoria" required/><span className="barra"></span>
+                                <label className="LDash">Contraseña</label>
                             </div>
                             <div className="grupo">
-                                <input type="date" id="categoria" required/><span className="barra"></span>
+                                <input className="IDash" type="date" id="categoria" required/><span className="barra"></span>
                             </div>
                             <button type="submit">Registro</button>
                         </div>

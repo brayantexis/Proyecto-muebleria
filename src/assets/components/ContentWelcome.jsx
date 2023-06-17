@@ -15,7 +15,7 @@ const ContentWelcome = () => {
             </p>
           </div>
           <div className="main-img">
-            <img src="./src/assets/img/silueta2.png" alt="silueta" />
+            {/* <img src="./src/assets/img/silueta2.png" alt="silueta" /> */}
           </div>
         </article>
       </main>
