@@ -36,33 +36,9 @@ const SalidaEntradas = () => {
                <div className="content_titulo">
                     <h3>Sal/Ent Registradas</h3>
                 </div>
-                <table2>
-                <thead>
-                        <tr>
-                           <th>Codigo de productos</th>
-                           <th>Fecha de entrada</th>
-                           <th>Fecha de Salida</th>
-                        </tr>
-                    </thead>
-                    <tr>
-                        <td></td>
-                        <td></td>
-                        <td></td>
-                    </tr>
-                    <tr>
-                        <td></td>
-                        <td></td>
-                        <td></td>
-                    </tr>
-                    <tr>
-                        <td></td>
-                        <td></td>
-                        <td></td>
-                    </tr>
-                </table2>
+                
                 <div className="content_conte">
-                <button type="submit">Editar</button>
-                <button type="submit">Eliminar</button>
+                
                 </div>
             </div>
         </div>
