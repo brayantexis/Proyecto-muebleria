@@ -5,7 +5,7 @@ const SalidaEntradas = () => {
     <div className="content">
             <div className="content_registro nuevo">
                 <div className="content_titulo">
-                    <h3>Categorias</h3>
+                    <h3>Salida / Entradas</h3>
                 </div>
                 <div className="content_conte">
                     <h4>Nuevo Registro:</h4>
@@ -13,13 +13,13 @@ const SalidaEntradas = () => {
                         <div className="form">
                             <div className="grupo">
                                 <input type="text" id="codigo" required/><span className="barra"></span>
-                                <label>Codigo de categoria</label>
+                                <label>Codigo de Productos</label>
                             </div>
+                            
                             <div className="grupo">
-                                <input type="text" id="categoria" required/><span className="barra"></span>
-                                <label>Tipo de Categoria</label>
+                                <input type="date" id="categoria" required/><span className="barra"></span>
                             </div>
-                            <div className="grupo">
+                            <div>
                                 <input type="date" id="categoria" required/><span className="barra"></span>
                             </div>
                             <button type="submit">Registro</button>
