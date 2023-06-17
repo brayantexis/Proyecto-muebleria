@@ -11,15 +11,20 @@ const SalidaEntradas = () => {
                     <h4>Nuevo Registro:</h4>
                     <form action="" id="form">
                         <div className="form">
+                        
                             <div className="grupo">
+                           
                                 <input type="text" id="codigo" required/><span className="barra"></span>
+                                
                                 <label>Codigo de Productos</label>
                             </div>
                             
                             <div className="grupo">
+                                Fecha de Entrada
                                 <input type="date" id="categoria" required/><span className="barra"></span>
                             </div>
-                            <div>
+                            <div className="grupo">
+                                Fecha de salida
                                 <input type="date" id="categoria" required/><span className="barra"></span>
                             </div>
                             <button type="submit">Registro</button>
@@ -31,8 +36,33 @@ const SalidaEntradas = () => {
                <div className="content_titulo">
                     <h3>Sal/Ent Registradas</h3>
                 </div>
+                <table2>
+                <thead>
+                        <tr>
+                           <th>Codigo de productos</th>
+                           <th>Fecha de entrada</th>
+                           <th>Fecha de Salida</th>
+                        </tr>
+                    </thead>
+                    <tr>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                    </tr>
+                    <tr>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                    </tr>
+                    <tr>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                    </tr>
+                </table2>
                 <div className="content_conte">
-                  
+                <button type="submit">Editar</button>
+                <button type="submit">Eliminar</button>
                 </div>
             </div>
         </div>

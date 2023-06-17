@@ -160,7 +160,7 @@ button{
 
 /* Esilo de la tabla */
 
-th{
+th3{
  background: #F1C40F;
 }
 
@@ -176,7 +176,10 @@ table{
 }
 
 th, td{
-    padding: 5px 14px;
+    border: 1px solid black;
+    padding: 40px 50px;
+    text-align: center;
+    padding-top: 10px;
 }
 
 .cru{
@@ -238,3 +241,5 @@ input[type="submit"]{
         text-align: center;
     }
 }
+
+
