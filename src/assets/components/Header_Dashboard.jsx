@@ -1,5 +1,6 @@
 //Creación de el header para los dashboards
 //metodo
+import { Link } from "react-router-dom";
 const Header_Dashboard = () => {
   return (
     <>
@@ -10,11 +11,11 @@ const Header_Dashboard = () => {
         </div>
         <nav id="menu">
             <ul id="line">
-                <li><a href="#">Categorias</a></li>
-                <li><a href="#">Productos</a></li>
-                <li><a href="#">Sal/ent</a></li>
-                <li><a href="#">Usuarios</a></li>
-                <li><a href="#">Salir</a></li>
+                <li><Link to="/Categorias">Categorias</Link></li>
+                <li><Link to="/Producto">Productos</Link></li>
+                <li><Link to="/SalEnt">Sal/ent</Link></li>
+                <li><Link to="/Usuarios">Usuarios</Link></li>
+                <li><Link to="/">Salir</Link></li>
             </ul>
         </nav>
     </header>
