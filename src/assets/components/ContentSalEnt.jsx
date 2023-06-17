@@ -12,14 +12,14 @@ const ContentSalEnt = () => {
                     <form action="" id="form">
                         <div className="form">
                             <div className="grupo" id="clave">
-                                <input type="text" id="codigo" required/><span className="barra"></span>
-                                <label>Codigo de Productos</label>
+                                <input className="IDash" type="text" id="codigo" required/><span className="barra"></span>
+                                <label className="LDash">Codigo de Productos</label>
                             </div>
                             <div className="grupo">
-                                <input type="date" id="categoria" required/><span className="barra"></span>
+                                <input className="IDash" type="date" id="categoria" required/><span className="barra"></span>
                             </div>
                             <div className="grupo">
-                                <input type="date" id="categoria" required/><span className="barra"></span>
+                                <input className="IDash" type="date" id="categoria" required/><span className="barra"></span>
                             </div>
                             <button type="submit">Registro</button>
                         </div>
