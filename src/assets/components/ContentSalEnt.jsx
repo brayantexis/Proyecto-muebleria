@@ -1,12 +1,11 @@
 
-//creación del componente Categorias
-const Categorias = () => {
-    return (
+const ContentSalEnt = () => {
+  return (
         <>
-        <div className="content">
+            <div className="content">
             <div className="content_registro nuevo">
-                <div className="content_titulo" id="cate">
-                    <h3>Categorias</h3>
+                <div className="content_titulo" id="SalEnt">
+                    <h3>Salidas / Entradas</h3>
                 </div>
                 <div className="content_conte">
                     <h4>Nuevo Registro:</h4>
@@ -14,11 +13,10 @@ const Categorias = () => {
                         <div className="form">
                             <div className="grupo" id="clave">
                                 <input type="text" id="codigo" required/><span className="barra"></span>
-                                <label>Codigo de categoria</label>
+                                <label>Codigo de Productos</label>
                             </div>
                             <div className="grupo">
-                                <input type="text" id="categoria" required/><span className="barra"></span>
-                                <label>Tipo de Categoria</label>
+                                <input type="date" id="categoria" required/><span className="barra"></span>
                             </div>
                             <div className="grupo">
                                 <input type="date" id="categoria" required/><span className="barra"></span>
@@ -29,8 +27,8 @@ const Categorias = () => {
                 </div>
             </div>
             <div className="content_registro ver">
-               <div className="content_titulo" id="cate">
-                    <h3  id="Titulo">Categorias Registradas</h3>
+               <div className="content_titulo" id="SalEnt">
+                    <h3  id="Titulo">Sal/Ent Registradas</h3>
                 </div>
                 <div className="content_conte over">
                   
@@ -41,4 +39,4 @@ const Categorias = () => {
     )
 }
 
-export default Categorias;
+export default ContentSalEnt;

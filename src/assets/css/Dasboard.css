@@ -7,12 +7,21 @@ body{
 }
 
 /* Contenedor padre */
+#cate{
+    background-color: #F1C40F;
+}
+#producto{
+    background-color: #AF781E;
+}
+#SalEnt{
+    background-color: #845912;
+}
 
 .content{
     width: 100%;
     /* background: black; */
     margin: 0 auto;
-    height: 100vh;
+    height: 85vh;
     padding: 10px;
     display: flex;
     justify-content: center;
@@ -36,6 +45,9 @@ body{
 }
 
 /* Contenedor de visualizar  */
+.produc{
+    height: 635px;
+}
 
 .ver{
     margin-left: 15px;

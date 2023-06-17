@@ -1,11 +1,16 @@
 import React from 'react'
 import ReactDOM from 'react-dom/client'
 import Product from './Product'
-
+import Categoria from './Categoria'
+import Dashboard_Users from "./Dashboard_Users";
+import SalEnt from './SalEnt';
 
 ReactDOM.createRoot(document.getElementById('root')).render(
   <React.StrictMode>
-    <Product />
+    <Categoria/>
+    <Product/>
+    <Dashboard_Users/>
+    <SalEnt/>
   </React.StrictMode>,
 
 )

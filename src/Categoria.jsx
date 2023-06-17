@@ -1,11 +1,8 @@
 import Footer from './assets/components/Footer'
 import Categorias from './assets/components/Categorias'
-import './assets/css/categorias-style.css'
-import "./assets/css/style_Dashboard.css"
-import "./assets/css/footer.css"
-
 import Header_Dashboard from './assets/components/Header_Dashboard'
-
+import "./assets/css/style_Dashboard.css"
+import "./assets/css/Dasboard.css"
 const Categoria = () => {
   return (
     <>
