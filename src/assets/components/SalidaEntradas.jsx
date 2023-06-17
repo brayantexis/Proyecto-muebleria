@@ -29,7 +29,7 @@ const SalidaEntradas = () => {
             </div>
             <div className="content_registro ver">
                <div className="content_titulo">
-                    <h3>Categorias Registradas</h3>
+                    <h3>Sal/Ent Registradas</h3>
                 </div>
                 <div className="content_conte">
                   
