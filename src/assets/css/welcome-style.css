@@ -67,7 +67,7 @@ header{
 }
 
 .menu li a{
-  color: white;
+  color: rgb(255, 253, 253);
   text-decoration: none;
   font-size: 1rem;
 }
@@ -88,6 +88,9 @@ header{
   font-weight: bold;
 }
 
+#home {
+  color: white;
+}
 
 main{
   background-image: url(./src/assets/img/fondo_home.jpg);

@@ -1,5 +1,40 @@
+import variables from "../../../public/data";
 
 const ContentUsuarios = () => {
+
+    const cate = variables.usuario.map(item => {
+        return(
+            <tr key={item.clave}>
+                <td>{item.clave}</td>
+                <td>{item.nombre}</td>
+                <td>{item.puesto}</td>
+                <td>{item.usuario}</td>
+                <td>
+                    <button className="delete">Eliminar</button>
+                    <button className="mod">Modificar</button>
+                </td>
+            </tr>
+        )
+    });
+
+    const evalu = () => {
+        if(variables.categoria.length > 0){
+            return(
+                <table>
+                    <tr>
+                        <th>Clave</th>
+                        <th>Nombre</th>
+                        <th>Puesto</th>
+                        <th>Usuario</th>
+                        <th>Acciones</th>
+                    </tr>
+                    {cate}
+                </table>
+            )
+        }
+    }
+    
+
   return (
     <>
         <div className="content">
@@ -16,15 +51,15 @@ const ContentUsuarios = () => {
                                 <label className="LDash">Clave de empleado</label>
                             </div>
                             <div className="grupo">
-                                <input className="IDash" type="text" id="categoria" required/><span className="barra"></span>
+                                <input className="IDash" type="text" id="nombre" required/><span className="barra"></span>
                                 <label className="LDash">Nombre</label>
                             </div>
                             <div className="grupo">
-                                <input className="IDash" type="text" id="categoria" required/><span className="barra"></span>
+                                <input className="IDash" type="text" id="puesto" required/><span className="barra"></span>
                                 <label className="LDash">Puesto</label>
                             </div>
                             <div className="grupo">
-                                <input className="IDash" type="text" id="categoria" required/><span className="barra"></span>
+                                <input className="IDash" type="text" id="usuario" required/><span className="barra"></span>
                                 <label className="LDash">Usuario</label>
                             </div>
                             <div className="grupo">
@@ -44,7 +79,7 @@ const ContentUsuarios = () => {
                     <h3>Usuarios Registrados</h3>
                 </div>
                 <div className="content_conte over">
-                    {/* tabla */}
+                    {evalu()}
                 </div>
             </div>
         </div>

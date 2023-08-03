@@ -1,6 +1,54 @@
 
+import variables from "../../../public/data"
 //creación del componente Productos
 const Productos = () => {
+
+    const cate = variables.productos.map(item => {
+        return(
+            <tr key={item.codigo}>
+                <td>{item.codigo}</td>
+                <td>{item.categoria}</td>
+                <td>{item.nombre}</td>
+                <td>{item.piezas}</td>
+                <td>{item.marca}</td>
+                <td>{item.unidades}</td>
+                <td>{item.fecha}</td>
+                {
+                    JSON.parse(localStorage.getItem("sesion")).status !== "Gerencia"?
+                    <td>
+                    <button className="delete">Eliminar</button>
+                    <button className="mod">Modificar</button>
+                </td>:
+                    null
+                }
+            </tr>
+        )
+    });
+
+    const evalu = () => {
+        if(variables.categoria.length > 0){
+            return(
+                <table>
+                    <tr>
+                        <th>Codigo</th>
+                        <th>Categoria</th>
+                        <th>Nombre</th>
+                        <th>Piezas</th>
+                        <th>Marca</th>
+                        <th>Unidades</th>
+                        <th>Fecha</th>
+                        {
+                    JSON.parse(localStorage.getItem("sesion")).status !== "Gerencia"?
+                    <th>Acciones</th>:
+                    null
+                }
+                    </tr>
+                    {cate}
+                </table>
+            )
+        }
+    }
+
     return(
         <>
          <div className="content">
@@ -52,7 +100,7 @@ const Productos = () => {
                     <h3>Categorias Registradas</h3>
                 </div>
                 <div className="content_conte over">
-                  
+                  {evalu()}
                 </div>
             </div>
         </div>

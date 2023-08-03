@@ -1,5 +1,43 @@
+import variables from "../../../public/data"
 
 const ContentSalEnt = () => {
+
+    const cate = variables.salent.map(item => {
+        return(
+            <tr key={item.codigo}>
+                <td>{item.codigo}</td>
+                <td>{item.fecha}</td>
+                {
+                    JSON.parse(localStorage.getItem("sesion")).status !== "Gerencia"?
+                    <td>
+                    <button className="delete">Eliminar</button>
+                    <button className="mod">Modificar</button>
+                </td>:
+                    null
+                }
+            </tr>
+        )
+    });
+
+    const evalu = () => {
+        if(variables.categoria.length > 0){
+            return(
+                <table>
+                    <tr>
+                        <th>Codigo</th>
+                        <th>Fecha</th>
+                        {
+                    JSON.parse(localStorage.getItem("sesion")).status !== "Gerencia"?
+                    <th>Acciones</th>:
+                    null
+                }
+                    </tr>
+                    {cate}
+                </table>
+            )
+        }
+    }
+
   return (
         <>
             <div className="content">
@@ -31,7 +69,7 @@ const ContentSalEnt = () => {
                     <h3  id="Titulo">Sal/Ent Registradas</h3>
                 </div>
                 <div className="content_conte over">
-                  
+                  {evalu()}
                 </div>
             </div>
         </div>

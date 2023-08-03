@@ -1,0 +1,32 @@
+// clases para realizar la base de datos.
+
+• Registro de categorías (Código de categoría, tipo, fecha de alta)
+• Registro de productos (Código de producto, Categoría, Marca, Nombre del producto,
+Piezas, Color, Material, Unidades, Dimensiones, Precio, Descripción, Fecha de alta,
+Fotografías)
+• Registro de salidas/entradas (Códigos de los productos, fecha de salida/entrada)
+• Registro de usuarios (Clave de empleado, Nombre, Puesto, Fotografía, Usuario,
+Contraseña, fecha de registro)
+• Consulta de categorías registradas (con opciones de borrado y edición de información)
+• Consulta de productos registrados (con opciones de borrado y edición de información)
+• Consulta de salidas/entradas (con opciones de borrado y edición de información)
+• Consulta de usuarios (con opciones de borrado y edición de información)
+
+• Informes por salidas/entradas por fechas, con gráficas de los productos con mayores o
+menores existencias.
+
+Características generales:
+• Que la aplicación sea adaptable a todo dispositivo móvil o de escritorio.
+• En todo momento debe haber un menú lateral o superior con todas las opciones
+disponibles para el usuario.
+
+• Hay 4 tipos de usuarios: Administrador (tiene todos los accesos)
+operador de almacén(Registro/Consulta de categorías, productos)
+ jefe de almacén (Registro/Consulta decategorías, productos, salidas/entradas)
+ Gerencia (Informes, Consulta de Categorías,Productos, Entradas/Salidas sin permisos de edición/borrado).
+
+
+• Toda informe o tabla de consulta, así como en la edición se deben mostrar la imagen del
+producto, con opción a consultar su información (en otra página o ventana alterna).
+
+

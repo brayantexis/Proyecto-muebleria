@@ -70,8 +70,8 @@ body{
 
 
 .content_conte{
-    height: 300px;
-    padding-left: 2%;
+    height: 80%;
+    padding: 0 10px;
 }
 .over{
     overflow: auto;
@@ -125,6 +125,13 @@ body{
     pointer-events: none;
 }
 
+.delete{
+    background-color: rgba(255, 0, 0, 0.577);
+}
+.mod{
+    background-color: rgba(0, 128, 0, 0.625);
+}
+
 input[type="date"]{
     color: var(--colorTextos);
     font-size: 13px;
@@ -171,6 +178,19 @@ button{
     font-size: 16px;
     cursor: pointer;
     border-radius: 10px;
+}
+
+/* !! evaluacion jahir 
+  !! partes a mejorar
+*/
+
+table {
+    width: 100%;
+    text-align: center;
+    border-collapse: collapse;
+}
+th,td {
+    border:  solid gray ;
 }
 
 @media (max-width: 720px) {
