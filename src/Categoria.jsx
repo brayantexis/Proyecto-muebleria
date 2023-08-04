@@ -4,6 +4,7 @@ import CategForm from './assets/components/CategForm'
 import Header_Dashboard from './assets/components/Header_Dashboard'
 import "./assets/css/style_Dashboard.css"
 import "./assets/css/Dasboard.css"
+
 const Categoria = () => {
   //variable para editar los datos de la categoria
   const [dataToEdit, setDataToEdit] = useState(null);
