@@ -1,0 +1,89 @@
+@font-face {
+    font-family: 'Roboto-m';
+    src: url('/src/assets/fonts/Roboto/Roboto-Medium.ttf');
+    font-family: 'Roboto-l';
+    src: url('/src/assets/fonts/Roboto/Roboto-Light.ttf');
+}
+*{
+    font-family: 'Roboto-l', sans-serif;
+}
+#nav{
+    background-color: black;
+    display: flex;
+    justify-content: space-between;
+    flex-direction: row;
+    align-items: center;
+}
+#logo{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+#logo p{
+    font-size: 15px;
+    color: white;
+    font-weight: bold;
+}
+#logo img{
+    width: 50px;
+    margin: 1rem;
+  }
+#menu ul{
+    display: flex;
+    position: relative;
+    gap: 20px;
+    right: 10%;
+}
+#menu ul li{
+    list-style: none;
+}
+#menu ul li a{
+    font-size: 20px;
+    color: white;
+    padding-bottom: 5px;
+    border-radius: 0 0 6px 6px;
+    border-bottom: 4px solid white;
+    text-decoration: none;
+}
+#menu ul li a:hover{
+    font-weight: bold;
+}
+#menMovil{
+    width: 60px;
+    position: absolute;
+    right: 45px;
+    top: 30px;
+    display: none;
+}
+#delMovil{
+    width: 40px;
+    position: absolute;
+    right: 55px;
+    top: 40px;
+    display: none;
+}
+
+@media  (max-width:720px) {
+    #nav{
+        width: 100%;
+    }
+    #logo{
+        flex-direction: column;
+        padding-top: 10px;
+    }
+    #logo img{
+        margin-bottom: 5px;
+    }
+    #logo p{
+        margin: 0 0 10px 5px;
+    }
+    #menu ul{
+        flex-direction: column;
+        position: absolute;
+        top: 110px;
+        right: 10px;
+        background-color: rgba(0, 0, 0, 0.613);
+        padding: 10px 10px 20px 10px;
+        border-radius: 10px;
+    }
+}
