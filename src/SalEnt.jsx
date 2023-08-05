@@ -17,7 +17,7 @@ const SalEnt = () => {
   //Carga de datos de la base de datos a la variable useState "data"
   const reloadData = async () => {
     try {
-      const response = await fetch("http://localhost/muebleria-api/index.php/Api/SalidasEntradas");
+      const response = await fetch("http://localhost:8080/ApiFinal/muebleria-api/index.php/Api/SalidasEntradas");
       if (response.ok) {
         const newData = await response.json();
         setData(newData);
@@ -32,7 +32,7 @@ const SalEnt = () => {
   //Creacion de nueva Salida/Entrada haciendo uso de fetch asincrono para la peticion POST
   const createData = async (data) => {
     try {
-      const url = "http://localhost/muebleria-api/index.php/Api/SalidasEntradas";
+      const url = "http://localhost:8080/ApiFinal/muebleria-api/index.php/Api/SalidasEntradas";
       const options = {
         method: "POST",
         headers: {
@@ -58,7 +58,7 @@ const SalEnt = () => {
   //Actualizacion de Salidas/Entradas haciendo uso de fetch asincrono para la peticion PUT
   const updateData = async (data) => {
     try {
-      const url = `http://localhost/muebleria-api/index.php/Api/SalidasEntradas/${data.id_SalEntrada}`;
+      const url = `http://localhost:8080/ApiFinal/muebleria-api/index.php/Api/SalidasEntradas/${data.id_SalEntrada}`;
       const options = {
         method: "PUT",
         headers: {
@@ -83,7 +83,7 @@ const SalEnt = () => {
   //Eliminación de Salida/Entrada haciendo uso de fetch asincrono para la peticion DELETE
   const deleteData = async (id) => {
     try {
-      const response = await fetch(`http://localhost/muebleria-api/index.php/Api/SalidasEntradas/${id}`, {
+      const response = await fetch(`http://localhost:8080/ApiFinal/muebleria-api/index.php/Api/SalidasEntradas/${id}`, {
           method: "DELETE"
       });
       
@@ -106,7 +106,7 @@ const SalEnt = () => {
   return (
     <>
       {
-      JSON.parse(localStorage.getItem("sesion")).Puesto !== "Operador de almacen"?
+      JSON.parse(localStorage.getItem("sesion")).Puesto !== "operador de almacen"?
         <>
         <Header_Dashboard />
             <SalEntForm

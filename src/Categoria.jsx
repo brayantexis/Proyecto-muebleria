@@ -4,6 +4,7 @@ import CategForm from './assets/components/CategForm'
 import Header_Dashboard from './assets/components/Header_Dashboard'
 import "./assets/css/style_Dashboard.css"
 import "./assets/css/Dasboard.css"
+import { Navigate } from "react-router-dom"
 
 const Categoria = () => {
   //variable para editar los datos de la categoria
@@ -99,10 +100,17 @@ const Categoria = () => {
     reloadData();
   }, []);
 
-  //Se envia los datos y los metodos del CRUD por medio de las props(propiedades) a componentes hijos
-  return (
-    <>
-      <Header_Dashboard />
+  const view = () => {
+    if(JSON.parse(localStorage.getItem("sesion")) === null){
+      return (
+        <>
+          <Navigate to="/login"/>
+        </>
+      )
+    }
+    return (
+      <>
+        <Header_Dashboard />
       <CategForm
         data={data}
         createData={createData}
@@ -111,6 +119,13 @@ const Categoria = () => {
         setDataToEdit={setDataToEdit}
         deleteData={deleteData}/>
       <Footer/>
+      </>
+    )
+  }
+  //Se envia los datos y los metodos del CRUD por medio de las props(propiedades) a componentes hijos
+  return (
+    <>
+     {view()}
     </>
   )
 }

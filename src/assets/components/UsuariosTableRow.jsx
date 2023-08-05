@@ -13,8 +13,8 @@ const UsuariosTableRow = ({ el, setDataToEdit, deleteData }) => {
           <td>{FechaRegistro}</td>
             {JSON.parse(localStorage.getItem("sesion")).Puesto !== "Gerencia" ? (
               <td>
-                  <button className="mod" onClick={() => setDataToEdit(el)}>Editar</button>
-                  <button className="delete" onClick={() => deleteData(ClaveEmpleado)}>Eliminar</button>
+                  <button className="mod" onClick={() => setDataToEdit(el)}><img src="./src/assets/img/editar.png"></img></button>
+                  <button className="delete" onClick={() => deleteData(ClaveEmpleado)}><img src="./src/assets/img/borrar.png"></img></button>
               </td>
             ) : (
               null   

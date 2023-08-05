@@ -11,8 +11,8 @@ const SalEntTableRow = ({ el, setDataToEdit, deleteData }) => {
     <td>{FechaEntrada}</td>
       {JSON.parse(localStorage.getItem("sesion")).Puesto !== "Gerencia" ? (
         <td>
-            <button className="mod" onClick={() => setDataToEdit(el)}>Editar</button>
-            <button className="delete" onClick={() => deleteData(id_SalEntrada)}>Eliminar</button>
+            <button className="mod" onClick={() => setDataToEdit(el)}><img src="./src/assets/img/editar.png"></img></button>
+            <button className="delete" onClick={() => deleteData(id_SalEntrada)}><img src="./src/assets/img/borrar.png"></img></button>
         </td>
       ) : (
         null   

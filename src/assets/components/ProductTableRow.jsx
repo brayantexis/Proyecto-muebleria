@@ -31,8 +31,8 @@ const ProductTableRow = ({ el, setDataToEdit, deleteData }) => {
     <td>{Fotografia}</td>
       {JSON.parse(localStorage.getItem("sesion")).Puesto !== "Gerencia" ? (
         <td>
-            <button className="mod" onClick={() => setDataToEdit(el)}>Editar</button>
-            <button className="delete" onClick={() => deleteData(id_Producto)}>Eliminar</button>
+            <button className="mod" onClick={() => setDataToEdit(el)}><img src="./src/assets/img/editar.png"></img></button>
+            <button className="delete" onClick={() => deleteData(id_Producto)}><img src="./src/assets/img/borrar.png"></img></button>
         </td>
       ) : (
         null   
