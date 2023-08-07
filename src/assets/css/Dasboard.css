@@ -197,6 +197,82 @@ button{
     border-radius: 10px;
 }
 
+.btn-editar {
+    background-color: #4FD16D ;
+    width: 100%;
+    padding: .1rem;
+    margin: 2px;
+}
+
+.btn-eliminar{
+    background-color: #EA3F3F ;
+    width: 100%;
+    padding: .1rem;
+    margin: 2px;
+}
+
+
+.files-element{
+    display: flex;
+    justify-content: center;
+    gap: .5rem;
+    margin-bottom: 1rem;
+}
+
+.files-element h5{
+    color: black;
+    text-decoration: none;
+} 
+
+.container-graficos{
+    margin-top: 1rem;
+    
+}
+
+.container-principal{
+    display: grid;
+    grid-template-rows: repeat(2, 1fr);
+    grid-template-columns: repeat(2, 1fr);
+    gap: 20px;
+    padding: 20px;
+    max-width: 1200px; /* Ajusta según tus necesidades */
+    margin: 0 auto; /* Centrar el contenido */
+}
+
+.contenedor-grafico{
+    background-color: #f0f0f0;
+    border: 1px solid #ccc;
+    box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+}
+
+.contenedor-grafico h2{
+   text-align: center;
+}
+
+.container-title{
+    display: flex;
+    width: 100%;
+    height: auto;
+    text-align: center;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.container-title h1{
+    margin-top: 1rem;
+    margin-left: 6rem;
+}
+
+.btn-back{
+    width: auto;
+    height: auto;
+    margin-top: 1.5rem;
+    margin-right: 6rem;
+    padding: .5rem;
+}
+
+
 /* !! evaluacion jahir 
   !! partes a mejorar
 */
