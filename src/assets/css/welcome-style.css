@@ -1,202 +1,205 @@
 @font-face {
-    font-family: 'Roboto-m';
-    src: url('/src/assets/fonts/Roboto/Roboto-Medium.ttf');
-    font-family: 'Roboto-l';
-    src: url('/src/assets/fonts/Roboto/Roboto-Light.ttf');
-  }
-  *, *::before, *::after{
-    box-sizing: border-box;
-    margin: 0;
-    padding: 0;
-    font-family: 'Roboto-l' ,sans-serif;
-  }
+  font-family: 'Roboto-m';
+  src: url('/src/assets/fonts/Roboto/Roboto-Medium.ttf');
+  font-family: 'Roboto-l';
+  src: url('/src/assets/fonts/Roboto/Roboto-Light.ttf');
+}
+*, *::before, *::after{
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  font-family: 'Roboto-l' ,sans-serif;
+}
+
+body{
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+}
+
+main{
+  flex-grow: 1;
+}
+
+.segmento{
+  padding: 1rem; 
+  background-color: black;
+  color: white;
+}
+
+header{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 1rem
+}
+
+.logo{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.logo p {
+  background-color: rgba(255,255,255, 0.5);
+  backdrop-filter: blur(1rem);
+  padding: .5rem;
+  border-radius: .5rem;
+  font-size: 1.3rem;
+  font-weight: bold;
+  text-transform: uppercase;
+  color: #fff
+}
+
+.logo img{
+  width: 50px;
+  margin: 1rem;
+}
+
+.menu ul{
+  list-style-type: none;
+}
+
+.menu li{
+  padding: .5rem;
+}
+
+.menu li a{
+  color: rgb(255, 253, 253);
+  text-decoration: none;
+  font-size: 1rem;
+}
+
+.btn-login a{
+  color: white;
+  text-decoration: none;
+  font-size: 1rem;
+}
+
+.btn-login a:hover{
+  text-decoration:underline;
+  font-weight: bold;
+}
+
+.menu li a:hover{
+  text-decoration:underline;
+  font-weight: bold;
+}
+
+#home {
+  color: white;
+}
+
+main{
+  background-image: url(./src/assets/img/fondo_home.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.hero-image{
+  display: flex;
+  flex-grow: 1;
+  align-items: center;
+  justify-content: center;
+  background-color: rgba(0, 0, 0, .5);
+  min-height: 100vh;
+  color: white;
+}
+
+.main-img img{
+  width: 100vh;
+  height: 100vh;
+}
+
+.main-title{
+  display: flex;
+  flex-direction: column;
+}
+
+.main-title h1{
+  text-decoration: underline;
+  font-weight: bold;
+  margin: 1rem;
+}
+
+.main-title p{
+  font-size: 3vh;
+  margin: 1.5rem;
   
-  body{
-    display: flex;
-    flex-direction: column;
-    min-height: 100vh;
-  }
-  
-  main{
-    flex-grow: 1;
-  }
-  
-  .segmento{
-    padding: 1rem; 
-    background-color: black;
-    color: white;
-  }
-  
+}
+
+.hero-image .main-title{
+  min-height: inherit;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+
+.hero-image h1{
+  font-size: 5vw;
+  text-shadow: 1rem, 1rem, 1rem;
+}
+
+footer{
+  padding: 1.5rem;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+}
+
+footer h2{
+  font-size: 1.3rem;
+  font-style: italic;
+}
+
+footer img{
+  height: 35px;
+}
+
+.redes-sociales{
+  display: flex;
+  align-items: center;
+}
+
+.redes-sociales img{
+  margin: 10px;
+  margin-left: 20px;
+}
+
+@media screen and (min-width: 1024px) {
   header{
     display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    gap: 1rem
+    flex-direction: row;
+    justify-content: space-between;
+    position: sticky;
+    top: 0;
   }
   
   .logo{
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-  }
-  
-  .logo p {
-    background-color: rgba(255,255,255, 0.5);
-    backdrop-filter: blur(1rem);
-    padding: .5rem;
-    border-radius: .5rem;
-    font-size: 1.3rem;
-    font-weight: bold;
-    text-transform: uppercase;
-    color: #fff
-  }
-  
-  .logo img{
-    width: 50px;
-    margin: 1rem;
-  }
-  
-  .menu ul{
-    list-style-type: none;
-  }
-  
-  .menu li{
-    padding: .5rem;
-  }
-  
-  .menu li a{
-    color: white;
-    text-decoration: none;
-    font-size: 1rem;
-  }
-  
-  .btn-login a{
-    color: white;
-    text-decoration: none;
-    font-size: 1rem;
-  }
-  
-  .btn-login a:hover{
-    text-decoration:underline;
-    font-weight: bold;
-  }
-  
-  .menu li a:hover{
-    text-decoration:underline;
-    font-weight: bold;
-  }
-  
-  
-  main{
-    background-image: url(./src/assets/img/fondo_home.jpg);
-    background-repeat: no-repeat;
-    background-size: cover;
-  }
-  
-  .hero-image{
-    display: flex;
-    flex-grow: 1;
-    align-items: center;
-    justify-content: center;
-    background-color: rgba(0, 0, 0, .5);
-    min-height: 100vh;
-    color: white;
-  }
-  
-  .main-img img{
-    width: 100vh;
-    height: 100vh;
-  }
-  
-  .main-title{
-    display: flex;
-    flex-direction: column;
-  }
-  
-  .main-title h1{
-    text-decoration: underline;
-    font-weight: bold;
-    margin: 1rem;
-  }
-  
-  .main-title p{
-    font-size: 3vh;
-    margin: 1.5rem;
-    
-  }
-  
-  .hero-image .main-title{
-    min-height: inherit;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    text-align: center;
-  }
-  
-  .hero-image h1{
-    font-size: 5vw;
-    text-shadow: 1rem, 1rem, 1rem;
-  }
-  
-  footer{
-    padding: 1.5rem;
-    display: flex;
-    justify-content: space-evenly;
-    align-items: center;
-  }
-  
-  footer h2{
-    font-size: 1.3rem;
-    font-style: italic;
-  }
-  
-  footer img{
-    height: 35px;
-  }
-  
-  .redes-sociales{
-    display: flex;
-    align-items: center;
-  }
-  
-  .redes-sociales img{
-    margin: 10px;
-    margin-left: 20px;
-  }
-  
-  @media screen and (min-width: 1024px) {
-    header{
-      display: flex;
       flex-direction: row;
-      justify-content: space-between;
-      position: sticky;
-      top: 0;
-    }
-    
-    .logo{
-        flex-direction: row;
-    }
-  
-    .btn-login a{
-        background-color: gray;
-        padding: .8rem;
-        border-radius: 10px;
-        backdrop-filter: blur(1rem);
-    }
-  
-    .btn-login a:hover{
-        text-decoration: none;
-        background-color: orange;
-        font-weight: bold;
-    }
-  
   }
-  
-  @media screen and (max-width: 720px){
-    footer{
-      flex-direction: column;
-      gap: 10px;
-    }
+
+  .btn-login a{
+      background-color: gray;
+      padding: .8rem;
+      border-radius: 10px;
+      backdrop-filter: blur(1rem);
   }
+
+  .btn-login a:hover{
+      text-decoration: none;
+      background-color: orange;
+      font-weight: bold;
+  }
+
+}
+
+@media screen and (max-width: 720px){
+  footer{
+    flex-direction: column;
+    gap: 10px;
+  }
+}

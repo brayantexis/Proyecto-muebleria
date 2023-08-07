@@ -1,3 +1,4 @@
+import { Link } from "react-router-dom";
 
 //Creacion del componente header
 const Header = () => {
@@ -10,11 +11,11 @@ const Header = () => {
         </div>
         <nav className="menu">
             <ul>
-                <li><a href="#">Home</a></li>
+            <Link id="home" to="/">Home</Link>
             </ul>
         </nav>
         <div className="btn-login">
-            <a href="">Inicio de sesión</a>
+            <Link to="/Login">Inicio de sesión</Link>
         </div>
     </header>
       </>
