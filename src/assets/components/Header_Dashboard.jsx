@@ -4,22 +4,22 @@ const Header_Dashboard = () => {
 
   const checkPermissions = () => {
     switch(JSON.parse(localStorage.getItem("sesion")).Puesto){
-      case "Administrador":
+      case "administrador":
         return (
           <>
                 <li><Link to="/Categorias">Categorias</Link></li>
                 <li><Link to="/Producto">Productos</Link></li>
                 <li><Link to="/SalEnt">Sal/ent</Link></li>
                 <li><Link to="/Usuarios">Usuarios</Link></li>
-                <li><Link to="/">Salir</Link></li>
+                <li><Link to="/" onClick={deletesesion}>Salir</Link></li>
           </>
         )
-      case "Operador de almacen":
+      case "operador de almacen":
         return(
           <>
                 <li><Link to="/Categorias">Categorias</Link></li>
                 <li><Link to="/Producto">Productos</Link></li>
-                <li><Link to="/">Salir</Link></li>
+                <li><Link to="/" onClick={deletesesion}>Salir</Link></li>
           </>
         )
       case "jefe de almacen":
@@ -28,7 +28,7 @@ const Header_Dashboard = () => {
                 <li><Link to="/Categorias">Categorias</Link></li>
                 <li><Link to="/Producto">Productos</Link></li>
                 <li><Link to="/SalEnt">Sal/ent</Link></li>
-                <li><Link to="/">Salir</Link></li>
+                <li><Link to="/" onClick={deletesesion}>Salir</Link></li>
           </>
         )
       case "Gerencia":
@@ -37,12 +37,17 @@ const Header_Dashboard = () => {
                 <li><Link to="/Categorias">Categorias</Link></li>
                 <li><Link to="/Producto">Productos</Link></li>
                 <li><Link to="/SalEnt">Sal/ent</Link></li>
-                <li><Link to="/">Salir</Link></li>
+                <li><Link to="/" onClick={deletesesion}>Salir</Link></li>
           </>
         )
     }
   }
+  const deletesesion = () => {
+    localStorage.clear("sesion");
+    
+  }
 
+  
   return (
     <>
     <header id="nav">
