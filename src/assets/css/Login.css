@@ -1,0 +1,82 @@
+#mainLogin{
+display: flex;
+justify-content: center;
+align-items: center;
+height: 100vh;
+background-image: url(/src/assets/img/fondo_desk.jpg);
+background-repeat: no-repeat;
+background-size: cover;
+}
+h1{
+    font-size: 40px;
+    margin-top: 15px;
+    color: white;
+    letter-spacing: 3px;
+}
+#conteLogin{
+    text-align: center;
+    width: 70%;
+    max-width: 700px;
+    height: auto;
+    padding: 35px;
+    border-radius: 20px;
+    background-color: rgba(95, 92, 92, 0.573);
+}
+#conteLogin form{
+    margin-top: 30px;
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+}
+.Llogin{
+    background-color: rgba(198, 194, 194, 0.742);
+    border-radius: 100px;
+    padding: 4px;
+}
+.Llogin, #userName, #password{
+    font-size: 25px;
+}
+#entrar{
+    width: 100%;
+    border-radius: 100px;
+    margin-bottom: 15px;
+    padding: 6px;
+    border: 0px;
+    font-weight: bold;
+    letter-spacing: 2px;
+    padding: 10px 0px;
+    background-color: #d9d9d9;
+}
+#userName,#password{
+    outline: none;
+    border: 0;
+    width: 500px;
+    background-color: rgba(255, 255, 255, 0);
+    position: relative;
+    bottom: 8px;
+}
+
+.login{
+    width: 40px;
+    position: relative;
+    top: 2px;
+}
+::placeholder{
+    color: white ;
+}
+@media (max-width: 900px){
+
+    .Llogin, #userName, #password{
+        font-size: 17px;
+    }
+    h1{
+        font-size: 30px;
+    }
+    .login{
+        width: 20px;
+    }
+    #userName,#password{
+        width: 150px;
+        bottom: 2px;
+    }
+}
